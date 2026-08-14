@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Doc Vault",
+    "slug": "doc-vault",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "docvault",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.docvault.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f1419"
+      },
+      "package": "com.docvault.app"
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

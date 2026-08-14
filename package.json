@@ -1,0 +1,30 @@
+{
+  "name": "doc-vault",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal document vault — multi-person, encrypted, OCR-enabled",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:api": "pnpm --filter @doc-vault/api dev",
+    "dev:web": "pnpm --filter @doc-vault/web dev",
+    "build": "turbo run build",
+    "db:generate": "pnpm --filter @doc-vault/db generate",
+    "db:migrate": "pnpm --filter @doc-vault/db migrate",
+    "db:seed": "pnpm --filter @doc-vault/db seed",
+    "db:studio": "pnpm --filter @doc-vault/db studio",
+    "docker:up": "docker compose up -d postgres",
+    "docker:up:all": "docker compose up -d --build",
+    "docker:down": "docker compose down",
+    "docker:reset": "docker compose down -v && docker compose up -d postgres",
+    "docker:build": "docker compose build",
+    "clean:start": "powershell -ExecutionPolicy Bypass -File ./scripts/clean-start.ps1"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
