@@ -5,6 +5,8 @@ dist/
 .turbo/
 .env
 .env.local
+backend/.env
+apps/frontend/.env
 *.log
 uploads/
 coverage/
